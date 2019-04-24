@@ -4,9 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/reset.css">
+    <link rel="stylesheet" href="assets/styles.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="wrapper">
+        <header>
+            <p>Adding numbers is hard!</p>
+        </header>
+        <main>
+            <div class="body-wrapper">
+                <div class="main-container">
+                    <div id="numbers">
+                          
+                    </div>
+                    <div class="resultContainer">
+                        <p id="result">0.00</p>    
+                    </div>
+                </div>
+                <aside>
+                    <input type="text" placeholder="0.00" value="" id="inputNumber">
+                    <button id="button">Add number</button>
+                </aside>
+            </div>
+        </main>
+    </div>
+    <script src="scripts/calculator.js"></script>
 </body>
 </html>
