@@ -1,0 +1,91 @@
+$primary-color: rgb(238, 238, 238);
+$background-color: #fff;
+$addButtonColor: rgb(111,166,230);
+$font-family: 'Helvetica', 'Arial', sans-serif;
+$padding: 7px;
+%inputAndButtonStyle {
+    border-radius: 5px;
+    width: 100%;
+    padding: 4px;
+}
+
+*{
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    background-color: $primary-color;
+    font-family: $font-family;
+}
+.wrapper{
+    background-color: $background-color;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0px 5px 8px -3px rgba(0,0,0,0.57);
+    min-height: 50vh;
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+}
+header{
+    padding: 15px;
+    border-bottom: 2px solid  $primary-color;
+    width: 100%;
+    text-transform: uppercase;
+}
+.main-container{
+    border-right: 2px solid $primary-color;
+    // border: 1px solid red;
+    padding: $padding;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    min-height: 50vh;
+}
+.body-wrapper{
+    display: flex;
+    flex-direction: row;
+}
+aside{
+    padding: $padding;
+}
+#button{
+    background-color: $addButtonColor;
+    color: $primary-color;
+    @extend %inputAndButtonStyle
+}
+#inputNumber{
+    border-radius: 5px;
+    @extend %inputAndButtonStyle
+}
+.deleteButton{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.divContainer  {
+    p{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 8px;
+    }
+}
+.divContainer:nth-child(even) {
+    background-color: $primary-color;
+}
+.resultContainer {
+    // position: relative;
+    #result{
+        // position: absolute;
+        // bottom: 0;
+        background-color: $primary-color;
+        width: 100%;
+        padding: 8px;
+        font-size: 1.2em;
+    }
+}
